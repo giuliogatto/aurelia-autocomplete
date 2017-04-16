@@ -1,0 +1,12 @@
+<template bindable="suggestions,property">
+  <div class='autocomplete-main'>
+    <input class="form-control autocomplete-input" type="text"  value.two-way="property" keyup.delegate="keyPressed($event)">
+    <div class='autocomplete-box' if.bind='showSuggestion'>
+      <div class='autocomplete-suggestion' repeat.for="suggestion of suggestionstoshow" >
+          <div class='single_suggestion' click.delegate="selectSuggestion(suggestion)">
+               ${suggestion}
+          </div>
+      </div>
+    </div>
+  </div>
+</template>
