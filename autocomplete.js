@@ -8,7 +8,7 @@ export class AutocompleteCustomElement{
 
 	selectSuggestion(suggestion){
 		this.property = suggestion;
-        this.showSuggestion = 0;
+        	this.showSuggestion = 0;
 	}
 
 	keyPressed(evt) {
