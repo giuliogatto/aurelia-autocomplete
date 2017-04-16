@@ -12,16 +12,14 @@ export class AutocompleteCustomElement{
 	}
 
 	keyPressed(evt) {
-    	this.property.length > 1 ? this.showSuggestion = 1 : this.showSuggestion = 0;
+    		this.property.length > 1 ? this.showSuggestion = 1 : this.showSuggestion = 0;
     	
-        this.suggestionstoshow = this.suggestions.filter(
-            suggestion => {
-                if(suggestion.toLowerCase().indexOf(this.property.toLowerCase()) > -1)return true;
-        	}
-        );
+        	this.suggestionstoshow = this.suggestions.filter(
+			suggestion => {
+				if(suggestion.toLowerCase().indexOf(this.property.toLowerCase()) > -1)return true;
+			}
+        	);
 
     	return true;
     }
-
-   
 }
