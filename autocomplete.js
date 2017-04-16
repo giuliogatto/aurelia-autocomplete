@@ -20,6 +20,6 @@ export class AutocompleteCustomElement{
 			}
         	);
 
-    	return true;
-    }
+		return true;
+	}
 }
